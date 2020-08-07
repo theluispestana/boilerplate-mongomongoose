@@ -12,7 +12,8 @@
 // mongoose. Store your Mongo Atlas database URI in the private .env file 
 // as MONGO_URI. Connect to the database using the following syntax:
 //
-// mongoose.connect(<Your URI>, { useNewUrlParser: true, useUnifiedTopology: true }); 
+const mongoose = require('mongoose');
+mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }); 
 
 
 
